@@ -3,7 +3,6 @@ const path = require('path');
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  // Criar páginas para cadeiras
   const createPageCadeiras = async () => {
     const cadeirasTemplate = path.resolve('src/templates/cadeira.js');
     const result = await graphql(`
@@ -29,7 +28,6 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   };
 
-  // Criar páginas para estofados
   const createPageEstofados = async () => {
     const estofadosTemplate = path.resolve('src/templates/estofado.js');
     const result = await graphql(`
