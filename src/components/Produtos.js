@@ -1,4 +1,9 @@
 import React from "react"
+import { Link } from 'gatsby'
+import { getWhatsUrl } from '../utils/index.js'
+import { CTA_WHATSAPP_MENSAGENS, URLS } from '../utils/constants'
+import Sofa from '../images/sofa.jpg'
+import Cadeira from '../images/cadeira.jpg'
 
 const Produtos = () => {
     return (
@@ -9,18 +14,18 @@ const Produtos = () => {
             </div>
             <div class="grid grid-cols-1 gap-y-8 mt-4">
                 <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg mx-4">
-                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-full w-full object-cover object-center" />
+                    <img src={Sofa} alt="sofá" class="h-full w-full object-cover object-center" />
                 </div>
                 <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg mx-4">
                     <img src="https://images.unsplash.com/photo-1636138389529-d35a2a348dc1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-full w-full object-cover object-center" />
                 </div>
             </div>
             <div class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 overflow-hidden rounded-lg mx-4 my-4">
-                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-full w-full object-cover object-center" />
+                <img src={Cadeira} alt="Cadeira cinza" class="h-full w-full object-cover object-center" />
             </div>
         </div>
         <div className='mt-4 sm:mt-10 flex items-center justify-center gap-x-6'>
-        <a href='#' className='mx-4 text-center rounded-xl bg-[#eb3334] sm:px-10 px-1 py-3 font-base sm:text-lg font-bold text-white shadow-sm hover:bg-[#db5454] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#db5454]'>CLIQUE AQUI E NOS CONTATE VIA WHATSAPP PARA UM ATENDIMENTO DIFERENCIADO</a>
+        <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.ctaButton)} target="_blank" className='mx-4 text-center rounded-xl bg-[#eb3334] sm:px-10 px-1 py-3 font-base sm:text-lg font-bold text-white shadow-sm hover:bg-[#db5454] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#db5454]'>CLIQUE AQUI E NOS CONTATE VIA WHATSAPP PARA UM ATENDIMENTO DIFERENCIADO</Link>
                         </div>
         </div>
     )

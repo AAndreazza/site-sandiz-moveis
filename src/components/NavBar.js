@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import Logo from '../images/logo.jpg'
+import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     return (
-        <header className='absolute inset-x-0 top-0 z-50 bg-[#eb3334]'>
+        <header className='absolute inset-x-0 top-0 z-50 bg-[#eb3334]' id='inicio'>
             <nav className='flex items-center justify-between p-6 lg:px-8' aria-label='Global'>
                 <div class='flex lg:flex-1'>
                     <a href='' class='-m-1.5 p-1.5 flex items-center'>
@@ -35,7 +36,7 @@ const NavBar = () => {
                     <a href='#' className='text-base font-semibold leading-6 text-white'>MESAS</a>
                     <a href='#' className='text-base font-semibold leading-6 text-white'>POLTRONAS</a>
                     <a href='#' className='text-base font-semibold leading-6 text-white'>SALA DE JANTAR</a>
-                    <a href='#' className='text-base font-semibold leading-6 text-white'>CONTATO</a>
+                    <ScrollLink to='contato' spy={true} smooth={true} className='cursor-pointer text-base font-semibold leading-6 text-white'>CONTATO</ScrollLink>
                 </div>
                 {/* 
                 <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
@@ -66,12 +67,12 @@ const NavBar = () => {
                     <div className='mt-6 flow-root'>
                         <div className='-my-6 divide-y divide-gray-500/25'>
                             <div className='space-y-8 py-10 ml-4'>
-                                <a href='#' className='block text-lg font-semibold leading-6 text-white'>CADEIRAS</a>
-                                <a href='#' className='block text-lg font-semibold leading-6 text-white'>ESTOFADOS</a>
-                                <a href='#' className='block text-lg font-semibold leading-6 text-white'>MESAS</a>
-                                <a href='#' className='block text-lg font-semibold leading-6 text-white'>POLTRONAS</a>
-                                <a href='#' className='block text-lg font-semibold leading-6 text-white'>SALA DE JANTAR</a>
-                                <a href='#' className='block text-lg font-semibold leading-6 text-white'>CONTATO</a>
+                                <a href='#' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>CADEIRAS</button></a>
+                                <a href='#' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>ESTOFADOS</button></a>
+                                <a href='#' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>MESAS</button></a>
+                                <a href='#' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>POLTRONAS</button></a>
+                                <a href='#' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>SALA DE JANTAR</button></a>
+                                <ScrollLink to='contato' spy={true} smooth={true} className='cursor-pointer block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>CONTATO</button></ScrollLink>
                             </div>
                         </div>
                     </div>
