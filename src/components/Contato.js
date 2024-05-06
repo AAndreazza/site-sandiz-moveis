@@ -6,7 +6,7 @@ import { CTA_WHATSAPP_MENSAGENS, URLS } from '../utils/constants'
 const Contato = () => {
     return (
         <div className="flex flex-col items-center" id="contato">
-            <h1 class="mt-20 text-center text-4xl font-bold tracking-tight text-[#f3d2d2] sm:text-7xl">ENTRE EM CONTATO</h1>
+            <h1 class="mt-10 sm:mt-20 text-center text-4xl font-bold tracking-tight text-[#f3d2d2] sm:text-7xl">ENTRE EM CONTATO</h1>
             <h1 class="-mt-2 text-center text-xl font-bold tracking-tight text-[#a72626] sm:text-2xl">ENTRE EM CONTATO CONOSCO!</h1>
             <div className='mt-10 flex flex-col md:flex-row mx-auto'>
                 <ul className='space-y-6 mt-0 sm:mt-5 text-[#752424]'>
