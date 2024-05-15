@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
 import { getWhatsUrl } from '../utils/index.js'
-import { CTA_WHATSAPP_MENSAGENS, URLS } from '../utils/constants'
+import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
 import Sofa from '../images/sofa.jpg'
 import Cadeira from '../images/cadeira.jpg'
 import Estante from '../images/estanteBege.jpg'

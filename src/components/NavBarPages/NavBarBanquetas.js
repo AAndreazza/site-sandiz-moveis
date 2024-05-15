@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../images/logo.jpg'
-import { Link as ScrollLink } from "react-scroll";
+import Logo from '../../images/logo.jpg'
 
 const NavBar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -30,14 +29,14 @@ const NavBar = () => {
                     </button>
                 </div>
                 <div className='text-base hidden lg:flex lg:gap-x-6'>
-                    <a href='banquetas' className='font-semibold leading-6 text-white'>BANQUETAS</a>
-                    <a href='cadeiras' className='font-semibold leading-6 text-white'>CADEIRAS</a>
-                    <a href='colchoes' className='font-semibold leading-6 text-white'>COLCHÕES</a>
-                    <a href='estofados' className='font-semibold leading-6 text-white'>ESTOFADOS</a>
-                    <a href='mesas' className='font-semibold leading-6 text-white'>MESAS</a>
-                    <a href='poltronas' className='font-semibold leading-6 text-white'>POLTRONAS</a>
-                    <a href='salajantar' className='font-semibold leading-6 text-white'>SALA DE JANTAR</a>
-                    <ScrollLink to='contato' spy={true} smooth={true} className='cursor-pointer text-base font-semibold leading-6 text-white'>CONTATO</ScrollLink>
+                    <a href='' className='font-semibold leading-6 text-white'>BANQUETAS</a>
+                    <a href='../cadeiras' className='font-semibold leading-6 text-white'>CADEIRAS</a>
+                    <a href='../colchoes' className='font-semibold leading-6 text-white'>COLCHÕES</a>
+                    <a href='../estofados' className='font-semibold leading-6 text-white'>ESTOFADOS</a>
+                    <a href='../mesas' className='font-semibold leading-6 text-white'>MESAS</a>
+                    <a href='../poltronas' className='font-semibold leading-6 text-white'>POLTRONAS</a>
+                    <a href='../salajantar' className='font-semibold leading-6 text-white'>SALA DE JANTAR</a>
+                    <a href='/' spy={true} smooth={true} className='cursor-pointer text-base font-semibold leading-6 text-white'>CONTATO</a>
                 </div>
                 {/* 
                 <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
@@ -68,14 +67,14 @@ const NavBar = () => {
                     <div className='mt-6 flow-root'>
                         <div className='-my-6 divide-y divide-gray-500/25'>
                             <div className='space-y-8 py-10 ml-4'>
-                                <a href='banquetas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>BANQUETAS</button></a>
-                                <a href='cadeiras' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>CADEIRAS</button></a>
-                                <a href='colchoes' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>COLCHÕES</button></a>
-                                <a href='estofados' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>ESTOFADOS</button></a>
-                                <a href='mesas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>MESAS</button></a>
-                                <a href='poltronas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>POLTRONAS</button></a>
-                                <a href='salajantar' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>SALA DE JANTAR</button></a>
-                                <ScrollLink to='contato' spy={true} smooth={true} className='cursor-pointer block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>CONTATO</button></ScrollLink>
+                                <a href='' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>BANQUETAS</button></a>
+                                <a href='../cadeiras' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>CADEIRAS</button></a>
+                                <a href='../colchoes' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>COLCHÕES</button></a>
+                                <a href='../estofados' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>ESTOFADOS</button></a>
+                                <a href='../mesas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>MESAS</button></a>
+                                <a href='../poltronas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>POLTRONAS</button></a>
+                                <a href='../salajantar' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>SALA DE JANTAR</button></a>
+                                <a href='/' spy={true} smooth={true} className='cursor-pointer block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>CONTATO</button></a>
                             </div>
                         </div>
                     </div>

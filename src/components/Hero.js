@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { getWhatsUrl } from '../utils/index.js'
-import { CTA_WHATSAPP_MENSAGENS, URLS } from '../utils/constants'
+import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
 import Foto2 from '../images/foto2.jpg'
 import Foto3 from '../images/foto3.jpg'
 

@@ -4,7 +4,7 @@ import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { getWhatsUrl } from '../utils/index.js'
 import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
-import NavBar from '../components/NavBarPages/NavBarCadeiras'
+import NavBar from '../components/NavBarPages/NavBarSalaJantar'
 import Footer from '../components/Footer'
 
 const options = {
@@ -24,7 +24,7 @@ const options = {
 
 const POSTS_QUERY = graphql`
     query {
-        posts: allContentfulCadeiras(filter: {visivel: {eq: true}}) {
+        posts: allContentfulSalasDeJantar(filter: {visivel: {eq: true}}) {
         edges {
             node {
                 nomeProduto
@@ -48,7 +48,7 @@ const POSTS_QUERY = graphql`
     }
 `
 
-const Cadeiras = () => {
+const SalaJantar = () => {
 
     const dados = useStaticQuery(POSTS_QUERY)
 
@@ -56,9 +56,9 @@ const Cadeiras = () => {
         <div className="bg-white">
             {/* ARRUMAR COR DE FUNDO */}
             <NavBar />
-            <h2 class="mt-36 text-center text-4xl font-bold tracking-tight text-[#a72626] sm:text-6xl">CADEIRAS</h2>
+            <h2 class="mt-36 text-center text-4xl font-bold tracking-tight text-[#a72626] sm:text-6xl">SALAS DE JANTAR</h2>
             <div className='mt-4 border-t-2 border-[#a72626] sm:max-w-80 max-w-60 mx-auto pt-6'></div>
-            <p class="text-center mx-6 sm:mx-auto text-xl leading-8 text-[#9b2323] max-w-5xl">Renove sua sala com as cadeiras da Sandiz Móveis. <br /> Escolha entre uma variedade de estilos disponíveis para entrega imediata ou encomenda.</p>
+            <p class="text-center mx-6 sm:mx-auto text-xl leading-8 text-[#9b2323] max-w-5xl">Renove sua sala com os conjuntos da Sandiz Móveis. <br /> Escolha entre uma variedade de estilos disponíveis para entrega imediata ou encomenda. <br /> <b>Cadeiras e mesas vendidas separadamente!</b></p>
             <div className='mx-auto max-w-4xl mt-0 sm:mt-16 mb-20 grid grid-cols-1 gap-x-14 gap-y-0 sm:gap-y-16 sm:grid-cols-2 lg:grid-cols-2'>
                 {dados.posts.edges.map(post => (
                     <div className='bg-gray-100 rounded-lg drop-shadow-xl mt-12 sm:mt-0 mx-8 sm:mx-0' key={post.node.nomeProduto}>
@@ -78,4 +78,4 @@ const Cadeiras = () => {
     )
 }
 
-export default Cadeiras
+export default SalaJantar
