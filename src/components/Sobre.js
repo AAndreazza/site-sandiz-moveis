@@ -1,8 +1,8 @@
 import React from "react"
-import IconFrete from '../images/iconFrete.png'
-import IconGarantia from '../images/iconGarantia.png'
-import IconParcelamento from '../images/iconParcelamento.png'
-import IconViacredi from '../images/iconViacredi1.png'
+import IconFrete from '../images/iconFrete2.png'
+import IconGarantia from '../images/iconGarantia2.png'
+import IconParcelamento from '../images/iconParcelamento2.png'
+import IconViacredi from '../images/iconViacredi2.png'
 
 const Sobre = () => {
     return (

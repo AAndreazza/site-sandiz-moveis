@@ -13,7 +13,7 @@ const Produtos = () => {
             <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
                 <div class="relative aspect-h-4 aspect-w-3 overflow-hidden rounded-lg lg:block mx-4 my-4">
                     <img src={Mesa} alt="mesa" class="h-full w-full object-cover object-center" />
-                    <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.ctaButton)} className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
+                    <Link to='mesas' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
                         <h2 className="text-black text-xs sm:text-base font-semibold leading-7">
                             MESAS
                             <span aria-hidden='true'> &rarr;</span>
@@ -23,7 +23,7 @@ const Produtos = () => {
                 <div class="grid grid-cols-1 gap-y-8 mt-4">
                     <div class="relative aspect-h-2 aspect-w-3 overflow-hidden rounded-lg mx-4">
                         <img src={Estante} alt="estante" class="h-full w-full object-cover object-center" />
-                        <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.ctaButton)} className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
+                        <Link to='mesas' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
                             <h2 className="text-black text-xs sm:text-base font-semibold leading-7">
                                 ESTANTES
                                 <span aria-hidden='true'> &rarr;</span>
@@ -32,7 +32,7 @@ const Produtos = () => {
                     </div>
                     <div class="relative aspect-h-2 aspect-w-3 overflow-hidden rounded-lg mx-4">
                         <img src={Sofa} alt="sofá" class="h-full w-full object-cover object-center" />
-                        <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.ctaButton)} className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
+                        <Link to='estofados' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
                             <h2 className="text-black text-xs sm:text-base font-semibold leading-7">
                                 ESTOFADOS
                                 <span aria-hidden='true'> &rarr;</span>
@@ -42,7 +42,7 @@ const Produtos = () => {
                 </div>
                 <div class="relative aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 overflow-hidden rounded-lg mx-4 my-4">
                     <img src={Cadeira} alt="Cadeira cinza" class="h-full w-full object-cover object-center" />
-                    <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.ctaButton)} className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
+                    <Link to='cadeiras' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
                         <h2 className="text-black text-xs sm:text-base font-semibold leading-7">
                             CADEIRAS
                             <span aria-hidden='true'> &rarr;</span>

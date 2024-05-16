@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { getWhatsUrl } from '../utils/index.js'
 import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
-import Foto2 from '../images/foto2.jpg'
+import Foto2 from '../images/foto22.jpg'
 import Foto3 from '../images/foto3.jpg'
 
 const Hero = () => {
@@ -16,8 +16,8 @@ const Hero = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: true,
-        autosplaySpeed: 50
+        //autoplay: true,
+        //autosplaySpeed: 50
     };
 
     return (
