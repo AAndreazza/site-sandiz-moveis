@@ -34,7 +34,7 @@ const NavBar = () => {
                     <a href='cadeiras' className='font-semibold leading-6 text-white'>CADEIRAS</a>
                     <a href='colchoes' className='font-semibold leading-6 text-white'>COLCHÕES</a>
                     <a href='estofados' className='font-semibold leading-6 text-white'>ESTOFADOS</a>
-                    <a href='mesas' className='font-semibold leading-6 text-white'>MESAS</a>
+                    {/*<a href='mesas' className='font-semibold leading-6 text-white'>MESAS</a>*/}
                     <a href='poltronas' className='font-semibold leading-6 text-white'>POLTRONAS</a>
                     <a href='salajantar' className='font-semibold leading-6 text-white'>SALA DE JANTAR</a>
                     <ScrollLink to='contato' spy={true} smooth={true} className='cursor-pointer text-base font-semibold leading-6 text-white'>CONTATO</ScrollLink>
@@ -72,7 +72,7 @@ const NavBar = () => {
                                 <a href='cadeiras' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>CADEIRAS</button></a>
                                 <a href='colchoes' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>COLCHÕES</button></a>
                                 <a href='estofados' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>ESTOFADOS</button></a>
-                                <a href='mesas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>MESAS</button></a>
+                                {/*<a href='mesas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>MESAS</button></a>*/}
                                 <a href='poltronas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>POLTRONAS</button></a>
                                 <a href='salajantar' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>SALA DE JANTAR</button></a>
                                 <ScrollLink to='contato' spy={true} smooth={true} className='cursor-pointer block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>CONTATO</button></ScrollLink>

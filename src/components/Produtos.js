@@ -5,7 +5,7 @@ import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
 import Sofa from '../images/sofa.jpg'
 import Cadeira from '../images/cadeira.jpg'
 import Estante from '../images/estanteBege.jpg'
-import Mesa from '../images/mesa.jpg'
+import Mesa from '../images/SL1.jpg'
 
 const Produtos = () => {
     return (
@@ -13,7 +13,7 @@ const Produtos = () => {
             <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
                 <div class="relative aspect-h-4 aspect-w-3 overflow-hidden rounded-lg lg:block mx-4 my-4">
                     <img src={Mesa} alt="mesa" class="h-full w-full object-cover object-center" />
-                    <Link to='mesas' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
+                    <Link to='salajantar' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
                         <h2 className="text-black text-xs sm:text-base font-semibold leading-7">
                             MESAS
                             <span aria-hidden='true'> &rarr;</span>
