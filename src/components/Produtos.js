@@ -3,9 +3,9 @@ import { Link } from 'gatsby'
 import { getWhatsUrl } from '../utils/index.js'
 import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
 import Sofa from '../images/sofa.jpg'
-import Cadeira from '../images/cadeira.jpg'
-import Estante from '../images/estanteBege.jpg'
+import Poltrona from '../images/POLTRONA1.jpg'
 import Mesa from '../images/SL1.jpg'
+import Colchao from '../images/COLCHAO.jpg'
 
 const Produtos = () => {
     return (
@@ -22,16 +22,7 @@ const Produtos = () => {
                 </div>
                 <div class="grid grid-cols-1 gap-y-8 mt-4">
                     <div class="relative aspect-h-2 aspect-w-3 overflow-hidden rounded-lg mx-4">
-                        <img src={Estante} alt="estante" class="h-full w-full object-cover object-center" />
-                        <Link to='mesas' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
-                            <h2 className="text-black text-xs sm:text-base font-semibold leading-7">
-                                ESTANTES
-                                <span aria-hidden='true'> &rarr;</span>
-                            </h2>
-                        </Link>
-                    </div>
-                    <div class="relative aspect-h-2 aspect-w-3 overflow-hidden rounded-lg mx-4">
-                        <img src={Sofa} alt="sofá" class="h-full w-full object-cover object-center" />
+                        <img src={Sofa} alt="estante" class="h-full w-full object-cover object-center" />
                         <Link to='estofados' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
                             <h2 className="text-black text-xs sm:text-base font-semibold leading-7">
                                 ESTOFADOS
@@ -39,12 +30,21 @@ const Produtos = () => {
                             </h2>
                         </Link>
                     </div>
+                    <div class="relative aspect-h-2 aspect-w-3 overflow-hidden rounded-lg mx-4">
+                        <img src={Colchao} alt="sofá" class="h-full w-full object-cover object-center" />
+                        <Link to='colchoes' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
+                            <h2 className="text-black text-xs sm:text-base font-semibold leading-7">
+                                COLCHÕES
+                                <span aria-hidden='true'> &rarr;</span>
+                            </h2>
+                        </Link>
+                    </div>
                 </div>
                 <div class="relative aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 overflow-hidden rounded-lg mx-4 my-4">
-                    <img src={Cadeira} alt="Cadeira cinza" class="h-full w-full object-cover object-center" />
-                    <Link to='cadeiras' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
+                    <img src={Poltrona} alt="Cadeira cinza" class="h-full w-full object-cover object-center" />
+                    <Link to='poltronas' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
                         <h2 className="text-black text-xs sm:text-base font-semibold leading-7">
-                            CADEIRAS
+                            POLTRONAS
                             <span aria-hidden='true'> &rarr;</span>
                         </h2>
                     </Link>
