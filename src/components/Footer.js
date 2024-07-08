@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link } from 'gatsby'
 import { getWhatsUrl } from '../utils/index.js'
 import { CTA_WHATSAPP_MENSAGENS, URLS } from '../utils/constants'
-import Logo from '../images/logo.jpg'
+import Logo from '../images/logo.webp'
 
 const Footer = () => {
     return (

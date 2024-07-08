@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from 'gatsby'
 import { getWhatsUrl } from '../utils/index.js'
 import { CTA_WHATSAPP_MENSAGENS, URLS } from '../utils/constants'
+import Icon from '../images/icon-clock.webp'
 
 const Contato = () => {
     return (
@@ -80,12 +81,21 @@ const Contato = () => {
                             </Link>
                         </div>
                     </li>
+                    <li>
+                        <div className='flex gap-x-4 mx-8 sm:mx-6 max-w-xs'>
+                            <dt className='flex-none'>
+                                <span className='sr-only'>Horario</span>
+                                <img src={Icon} className='h-7 w-7 sm:h-8 sm:w-8' alt='icone' />
+                            </dt>
+                            <dd className='text-xl'><b>Segunda a Sexta:</b> das 8h30 às 12h00 e das 13h40 às 18h00. <br/><b>Sábado:</b> das 8h30 às 12h00. <br/><b>Outros horários:</b> mediante a agendamento.</dd>
+                        </div>
+                    </li>
                 </ul>
 
                 <div className=''>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14240.450249775127!2d-49.268441!3d-26.8363719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94defd53f8fa871d%3A0x454426221018f935!2sSandiz%20estofados!5e0!3m2!1spt-BR!2sbr!4v1714677556117!5m2!1spt-BR!2sbr"
-                        width='400'
-                        height='250'
+                        width='500'
+                        height='400'
                         className='mx-auto max-w-[22rem] lg:max-w-[53.25rem] mb-10 mt-5 sm:mt-0'
                         allowfullscreen=''
                         loading='lazy'

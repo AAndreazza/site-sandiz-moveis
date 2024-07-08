@@ -2,7 +2,7 @@ import React from 'react';
 import { getWhatsUrl } from '../utils/index.js'
 import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
 import { Link } from 'gatsby'
-import whatsappIcon from '../images/whatsappIcon.png';
+import whatsappIcon from '../images/whatsappIcon.webp';
 
 const whatsAppIcon = () => {
   return (

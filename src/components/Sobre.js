@@ -1,8 +1,8 @@
 import React from "react"
-import IconFrete from '../images/iconFrete2.png'
-import IconGarantia from '../images/iconGarantia2.png'
-import IconParcelamento from '../images/iconParcelamento2.png'
-import IconViacredi from '../images/iconViacredi2.png'
+import IconFrete from '../images/iconFrete2.webp'
+import IconGarantia from '../images/iconGarantia2.webp'
+import IconParcelamento from '../images/iconParcelamento2.webp'
+import IconViacredi from '../images/iconViacredi2.webp'
 
 const Sobre = () => {
     return (
@@ -15,22 +15,22 @@ const Sobre = () => {
                 </div>
                 <div class="mt-14 text-[#9b2323] mx-auto max-x-none sm:max-w-6xl grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
                     <div>
-                        <img src={IconFrete} alt="truck--v1" className="mx-auto sm:-mt-2 sm:mb-4" />
+                        <img src={IconFrete} alt="icone de frete" className="mx-auto sm:-mt-2 sm:mb-4" />
                         <dt class="text-lg text-center mt-2 font-bold">FRETE GRÁTIS</dt>
                         <dt class="text-sm text-center">EM TIMBÓ E REGIÃO</dt>
                     </div>
                     <div>
-                        <img src={IconGarantia} alt="truck--v1" className="mx-auto" />
+                        <img src={IconGarantia} alt="icone de garantia" className="mx-auto" />
                         <dt class="text-lg text-center mt-2 font-bold">GARANTIA</dt>
                         <dt class="text-sm text-center">CONFORME CÓDIGO DO CONSUMIDOR</dt>
                     </div>
                     <div>
-                        <img src={IconParcelamento} alt="truck--v1" className="mx-auto mt-6 sm:mt-0" />
+                        <img src={IconParcelamento} alt="icone de parcelamento" className="mx-auto mt-6 sm:mt-0" />
                         <dt class="text-lg text-center mt-2 font-bold">PARCELAMENTO</dt>
                         <dt class="text-sm text-center">EM ATÉ 12 VEZES NO CARTÃO</dt>
                     </div>
                     <div>
-                        <img src={IconViacredi} alt="truck--v1" className="mx-auto h-24 w-24 mt-6 sm:mt-0" />
+                        <img src={IconViacredi} alt="icone da viacredi" className="mx-auto h-24 w-24 mt-6 sm:mt-0" />
                         <dt class="text-lg text-center mt-2 font-bold">VENDAS VIACREDI</dt>
                         <dt class="text-sm text-center">EM ATÉ 36 VEZES</dt>
                     </div>

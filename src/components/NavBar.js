@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../images/logo.jpg'
+import Logo from '../images/logo.webp'
 import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
