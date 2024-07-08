@@ -6,6 +6,7 @@ import { getWhatsUrl } from '../utils/index.js'
 import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
 import NavBar from '../components/NavBarPages/NavBarPoltronas'
 import Footer from '../components/Footer'
+import WhatsappIcon from "../components/WhatsappIcon";
 
 const options = {
     renderMark: {
@@ -54,11 +55,11 @@ const Poltronas = () => {
 
     return (
         <div className="bg-slate-50">
-            {/* ARRUMAR COR DE FUNDO */}
+            <WhatsappIcon />
             <NavBar />
             <h2 class="pt-36 text-center text-4xl font-bold tracking-tight text-[#a72626] sm:text-6xl">POLTRONAS</h2>
             <div className='mt-4 border-t-2 border-[#a72626] sm:max-w-80 max-w-60 mx-auto pt-6'></div>
-            <p class="text-center mx-6 sm:mx-auto text-xl leading-8 text-[#9b2323] max-w-5xl">Renove sua sala com as poltronas da Sandiz Móveis. <br /> Escolha entre uma variedade de estilos disponíveis para entrega imediata ou encomenda.</p>
+            <p class="text-center mx-6 sm:mx-auto text-lg sm:text-xl leading-8 text-[#9b2323] max-w-5xl">Renove sua sala com as poltronas da Sandiz Móveis. <br /> Escolha entre uma variedade de estilos disponíveis para <b>entrega imediata</b> ou <b>encomenda.</b></p>
             <div className='mx-auto max-w-4xl mt-0 sm:mt-16 mb-20 grid grid-cols-1 gap-x-14 gap-y-0 sm:gap-y-16 sm:grid-cols-2 lg:grid-cols-2'>
                 {dados.posts.edges.map(post => (
                     <div className='bg-gray-100 rounded-lg drop-shadow-xl mt-12 sm:mt-0 mx-8 sm:mx-0' key={post.node.nomeProduto}>

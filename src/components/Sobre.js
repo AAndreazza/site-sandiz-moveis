@@ -6,7 +6,7 @@ import IconViacredi from '../images/iconViacredi2.png'
 
 const Sobre = () => {
     return (
-        <div class="relative isolate overflow-hidden py-10 sm:py-12">
+        <div class="relative isolate overflow-hidden py-10 sm:py-16">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-3xl lg:mx-0">
                     <h2 class="text-4xl font-bold tracking-tight text-[#f3d2d2] sm:text-6xl">SANDIZ MÓVEIS</h2>

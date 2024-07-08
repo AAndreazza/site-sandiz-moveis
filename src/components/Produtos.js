@@ -15,7 +15,7 @@ const Produtos = () => {
                     <img src={Mesa} alt="mesa" class="h-full w-full object-cover object-center" />
                     <Link to='salajantar' className="absolute bottom-2 right-2 bg-slate-200 hover:bg-slate-300 opacity-80 rounded-full px-6 py-0 sm:px-8 sm:py-2">
                         <h2 className="text-black text-xs sm:text-base font-semibold leading-7">
-                            MESAS
+                            MESAS E CADEIRAS
                             <span aria-hidden='true'> &rarr;</span>
                         </h2>
                     </Link>

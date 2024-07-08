@@ -6,6 +6,7 @@ import { getWhatsUrl } from '../utils/index.js'
 import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
 import NavBar from '../components/NavBarPages/NavBarSalaJantar'
 import Footer from '../components/Footer'
+import WhatsappIcon from "../components/WhatsappIcon";
 
 const options = {
     renderMark: {
@@ -54,13 +55,13 @@ const SalaJantar = () => {
 
     return (
         <div className="bg-slate-50">
-            {/* ARRUMAR COR DE FUNDO */}
+            <WhatsappIcon />
             <NavBar />
             <h2 class="pt-36 text-center text-4xl font-bold tracking-tight text-[#a72626] sm:text-6xl">SALAS DE JANTAR</h2>
             <div className='mt-4 border-t-2 border-[#a72626] sm:max-w-80 max-w-60 mx-auto pt-6'></div>
-            <p class="-mt-2 text-center mx-6 sm:mx-auto text-lg leading-8 text-[#9b2323] max-w-5xl font-bold">Cadeiras e mesas vendidas separadamente!</p>
-            <p class="text-center mx-6 sm:mx-auto text-xl leading-8 text-[#9b2323] max-w-5xl">Renove sua sala com os conjuntos da Sandiz Móveis. <br /> Escolha entre uma variedade de estilos disponíveis para entrega imediata ou encomenda.</p>
-            <div className='mx-auto max-w-4xl mt-0 sm:mt-16 mb-20 grid grid-cols-1 gap-x-4 gap-y-0 sm:gap-y-16 sm:grid-cols-2 lg:grid-cols-2'>
+            <p class="-mt-2 text-center mx-2 sm:mx-auto text-lg sm:text-xl leading-8 text-[#9b2323] sm:max-w-5xl font-bold">Cadeiras e mesas vendidas separadamente!</p>
+            <p class="mt-2 text-center mx-6 sm:mx-auto text-lg sm:text-xl leading-8 text-[#9b2323] max-w-5xl">Renove sua sala com os conjuntos da Sandiz Móveis. <br /> Escolha entre uma variedade de estilos disponíveis para <b>entrega imediata</b> ou <b>encomenda.</b></p>
+            <div className='mx-auto max-w-4xl mt-0 sm:mt-16 mb-20 grid grid-cols-1 gap-x-10 gap-y-0 sm:gap-y-16 sm:grid-cols-2 lg:grid-cols-2'>
                 {dados.posts.edges.map(post => (
                     <div className='bg-gray-100 rounded-lg drop-shadow-xl mt-12 sm:mt-0 mx-8 sm:mx-0' key={post.node.nomeProduto}>
                         <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.ctaButton)} target='blank'>
