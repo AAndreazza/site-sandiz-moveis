@@ -18,13 +18,13 @@ const Hero = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        /*autoplay: true,
+        autoplay: true,
         autoplaySpeed: 40,
         customPaging: i => (
             <button className="mt-10">
                 ●
             </button>
-        )*/
+        )
     };
 
     return (
