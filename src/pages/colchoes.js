@@ -4,6 +4,7 @@ import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { getWhatsUrl } from '../utils/index.js'
 import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
+import Seo from "../components/Seo"
 import NavBar from '../components/NavBarPages/NavBarColchoes'
 import Footer from '../components/Footer'
 import WhatsappIcon from "../components/WhatsappIcon";
@@ -55,6 +56,7 @@ const Colchoes = () => {
 
     return (
         <div className="bg-slate-50">
+            <Seo title='Colchões - Sandiz Móveis'/>
             <WhatsappIcon />
             <NavBar />
             <h2 class="pt-36 text-center text-4xl font-bold tracking-tight text-[#a72626] sm:text-6xl">COLCHÕES</h2>
