@@ -18,7 +18,7 @@ const Footer = () => {
                     </ScrollLink>
                 </div>
 
-                <div className='mr-10 flex lg:gap-x-8 gap-x-4 text-[#fff8ff]'>
+                <div className='mr-14 sm:mr-28 flex lg:gap-x-8 gap-x-4 text-[#fff8ff]'>
                     <dt className='flex-none'>
                         <span className='sr-only'>Whatsapp</span>
                         <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.ctaButton)} target="_blank">

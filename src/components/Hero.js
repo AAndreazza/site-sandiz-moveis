@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'gatsby'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,6 +11,18 @@ import Foto3 from '../images/poltronaHome.webp'
 import Foto4 from '../images/salaJantarHome2.webp'
 
 const Hero = () => {
+    const sliderRef = useRef(null);
+    const [initialized, setInitialized] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setInitialized(true);
+            sliderRef.current.slickPlay();
+        }, 4000); 
+
+        return () => clearTimeout(timer);
+    }, []);
+
     const settings = {
         dots: true,
         infinite: true,
@@ -18,8 +30,8 @@ const Hero = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: true,
-        autoplaySpeed: 40,
+        autoplay: initialized, 
+        autoplaySpeed: 4000,
         customPaging: i => (
             <button className="mt-10">
                 ●
@@ -30,15 +42,15 @@ const Hero = () => {
     return (
         <div className='overflow-hidden relative isolate pt-24 sm:pt-0'>
             <div className="slider-container">
-                <Slider {...settings}>
+                <Slider ref={sliderRef} {...settings}>
                     <div className='bg-[#eb3334] relative'>
                         <img src={Foto1} alt='imagem de dentro da loja' className='opacity-60 h-full w-full object-cover' />
                         <div className='absolute inset-0 flex items-center justify-center'>
                             <div className='text-center mx-auto max-w-3xl pt-22 sm:pt-32'>
                                 <h1 className='text-lg mx-8 sm:mx-0 font-bold tracking-tight text-white sm:text-5xl'>Com mais de quatro décadas de experiência, nossa loja de móveis oferece qualidade, variedade e estilo desde 1976</h1>
                                 <div className='mt-4 sm:mt-10 flex items-center justify-center gap-x-6'>
-                                <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.ctaButton)} target="_blank" className='rounded-xl bg-[#eb3334] px-6 sm:px-10 py-3 text-xs sm:text-lg font-bold text-white shadow-xl hover:bg-[#a72626]'>ENTRAR EM CONTATO <span aria-hidden='true'>&rarr;</span></Link>
-                            </div>
+                                    <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.ctaButton)} target="_blank" className='rounded-xl bg-[#eb3334] px-6 sm:px-10 py-3 text-xs sm:text-lg font-bold text-white shadow-xl hover:bg-[#a72626]'>ENTRAR EM CONTATO <span aria-hidden='true'>&rarr;</span></Link>
+                                </div>
                             </div>
                         </div>
                     </div>
