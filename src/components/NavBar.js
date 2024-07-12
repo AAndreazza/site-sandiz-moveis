@@ -68,8 +68,7 @@ const NavBar = () => {
                     <div className='mt-6 flow-root'>
                         <div className='-my-6 divide-y divide-gray-500/25'>
                             <div className='space-y-8 py-10 ml-4'>
-                            <a href='aparadores' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>APARADORES</button></a>
-                                {/*<a href='banquetas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>BANQUETAS</button></a>*/}
+                                <a href='banquetas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>BANQUETAS</button></a>
                                 <a href='colchoes' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>COLCHÕES</button></a>
                                 <a href='estofados' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>ESTOFADOS</button></a>
                                 <a href='poltronas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>POLTRONAS</button></a>

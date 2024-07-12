@@ -47,7 +47,7 @@ const Hero = () => {
                         <img src={Foto1} alt='imagem de dentro da loja' className='opacity-60 h-full w-full object-cover' />
                         <div className='absolute inset-0 flex items-center justify-center'>
                             <div className='text-center mx-auto max-w-3xl pt-22 sm:pt-32'>
-                                <h1 className='text-lg mx-8 sm:mx-0 font-bold tracking-tight text-white sm:text-5xl'>Com mais de quatro décadas de experiência, nossa loja de móveis oferece qualidade, variedade e estilo desde 1976</h1>
+                                <h1 className='text-base mx-8 sm:mx-0 font-bold tracking-tight text-white sm:text-5xl'>Com mais de quatro décadas de experiência, nossa loja de móveis oferece qualidade, variedade e estilo desde 1976</h1>
                                 <div className='mt-4 sm:mt-10 flex items-center justify-center gap-x-6'>
                                     <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.ctaButton)} target="_blank" className='rounded-xl bg-[#eb3334] px-6 sm:px-10 py-3 text-xs sm:text-lg font-bold text-white shadow-xl hover:bg-[#a72626]'>ENTRAR EM CONTATO <span aria-hidden='true'>&rarr;</span></Link>
                                 </div>
