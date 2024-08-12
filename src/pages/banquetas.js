@@ -59,7 +59,7 @@ const Banquetas = () => {
             <Seo title='Banquetas - Sandiz Móveis'/>
             <WhatsappIcon />
             <NavBar />
-            <h2 class="mt-36 text-center text-4xl font-bold tracking-tight text-[#a72626] sm:text-6xl">BANQUETAS</h2>
+            <h2 class="pt-36 text-center text-4xl font-bold tracking-tight text-[#a72626] sm:text-6xl">BANQUETAS</h2>
             <div className='mt-4 border-t-2 border-[#a72626] sm:max-w-80 max-w-60 mx-auto pt-6'></div>
             <p class="text-center mx-6 sm:mx-auto text-lg sm:text-xl leading-8 text-[#9b2323] max-w-5xl">Renove sua sala com as banquetas da Sandiz Móveis. <br /> Escolha entre uma variedade de estilos disponíveis para <b>entrega imediata</b> ou <b>encomenda.</b></p>
             <div className='mx-auto max-w-4xl mt-0 sm:mt-16 mb-20 grid grid-cols-1 gap-x-14 gap-y-0 sm:gap-y-16 sm:grid-cols-2 lg:grid-cols-2'>
