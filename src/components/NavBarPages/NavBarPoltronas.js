@@ -31,6 +31,7 @@ const NavBar = () => {
                 <div className='text-base hidden lg:flex lg:gap-x-6'>
                     {/*<a href='../aparadores' className='font-semibold leading-6 text-white'>APARADORES</a>*/}
                     <a href='../banquetas' className='font-semibold leading-6 text-white'>BANQUETAS</a>
+                    <a href='../cadeiras' className='font-semibold leading-6 text-white'>CADEIRAS</a>
                     <a href='../colchoes' className='font-semibold leading-6 text-white'>COLCHÕES</a>
                     <a href='../estofados' className='font-semibold leading-6 text-white'>ESTOFADOS</a>
                     <a href='' className='font-semibold leading-6 text-white'>POLTRONAS</a>
@@ -68,6 +69,7 @@ const NavBar = () => {
                             <div className='space-y-8 py-10 ml-4'>
                                 {/*<a href='../aparadores' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>APARADORES</button></a>*/}
                                 <a href='../banquetas' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>BANQUETAS</button></a>
+                                <a href='../cadeiras' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>CADEIRAS</button></a>
                                 <a href='../colchoes' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>COLCHÕES</button></a>
                                 <a href='../estofados' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>ESTOFADOS</button></a>
                                 <a href='' className='block text-lg font-semibold leading-6 text-white'><button onClick={() => setIsSidebarOpen(false)}>POLTRONAS</button></a>
