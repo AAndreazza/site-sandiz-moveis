@@ -56,7 +56,7 @@ const Cadeiras = () => {
 
     return (
         <div className="bg-slate-50">
-            <Seo title='Banquetas - Sandiz Móveis'/>
+            <Seo title='Cadeiras - Sandiz Móveis'/>
             <WhatsappIcon />
             <NavBar />
             <h2 class="pt-36 text-center text-4xl font-bold tracking-tight text-[#a72626] sm:text-6xl">CADEIRAS</h2>
